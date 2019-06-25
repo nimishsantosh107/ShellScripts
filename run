@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -d "./exec" ] 
+then
+	mkdir exec/
+fi
+
+gcc $1.c -o ./exec/$1
+./exec/$1
