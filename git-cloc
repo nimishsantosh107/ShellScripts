@@ -1,4 +1,4 @@
 #!/bin/bash
-git clone --depth 1 "$1" temp-linecount-repo &&
-cloc temp-linecount-repo &&
-rm -rf temp-linecount-repo
+git clone --depth 1 git@github.com:nimishsantosh107/"$1".git TEMP_LINECOUNT_REPO  &&
+cloc TEMP_LINECOUNT_REPO &&
+rm -rf TEMP_LINECOUNT_REPO
