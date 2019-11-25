@@ -5,7 +5,7 @@ then
 echo "USAGE: autogit '[commit message]'"
 else
 git add .
-git status 
-git commit -m "$1"
+git status &&
+git commit -m "$1" &&
 git push
 fi
