@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" == "" ]
+then
+echo "USAGE: screenshot-format '[TYPE]'"
+echo "FORMATS: JPG TIFF GIF PDF PNG"
+else
+defaults write com.apple.screencapture type "$1"
+fi
