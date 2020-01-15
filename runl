@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" == "" ]
+then
+echo "USAGE: runl '[.l or .lex FILE']"
+else
+lex $1 &&
+gcc lex.yy.c &&
+./a.out
