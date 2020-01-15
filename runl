@@ -4,6 +4,10 @@ if [ "$1" == "" ]
 then
 echo "USAGE: runl '[.l or .lex FILE']"
 else
+echo "***LEX***"
 lex $1 &&
+echo "***GCC***"
 gcc lex.yy.c &&
+echo "***RUN***"
 ./a.out
+fi
