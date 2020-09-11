@@ -5,5 +5,5 @@ then
 	mkdir exec/
 fi
 
-gcc $1.c -o ./exec/$1
-./exec/$1
+gcc $1 -o ./exec/${1:0:${#1}-2}
+./exec/${1:0:${#1}-2}
